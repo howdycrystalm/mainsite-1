@@ -5,25 +5,24 @@
   color: $not-black;
 }
 
-.chat-container-bg {
+.chat-container-bg-m {
   //increased width from standard 25em to 26em to hide scroll. cross-browser friendly.
-  width: 26em;
+  width: 100vw;
   height: 100vh;
   bottom: 75px;
   padding-top: 73px;
   vertical-align: bottom;
-  border-left: 1px solid #000000;
   //adding the overflows fixes header and chatbar in fixed position
   overflow-y: auto;
   overflow-x: hidden;
   background-color: $light-grey;
-  @include xxs {
-    height: 100vh;
-    width: 22em;
-  }
+  // @include xxs {
+  //   height: 100vh;
+  //   width: 22em;
+  // }
 }
 
-.chatbox-alignment {
+.chatbox-alignment-m {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,11 +36,12 @@
   font-size: 1em;
   line-height: 1.375em;
   padding: 18px;
-  width: 25em;
+  width: 100vw;
   height: auto;
+  margin-top: 40px;
   margin-bottom: 75px;
-  @include xxs {
-    width: 22em;
-    padding-left: 1.5em;
-  }
+  // @include xxs {
+  //   width: 22em;
+  //   padding-left: 1.5em;
+  // }
 }
