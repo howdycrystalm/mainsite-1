@@ -6,7 +6,9 @@ class MobileBot extends React.Component {
   render() {
     return (
       <div>
-        <ChatContainer />
+        <div className="position-bot the-bot">
+          <ChatContainer />
+        </div>
       </div>
     );
   }

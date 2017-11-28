@@ -5,6 +5,12 @@ $breakpoint-md: 769px !default;
 $breakpoint-lg: 1025px !default;
 $breakpoint-xl: 2000px !default;
 
+@mixin mobile() {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
 @mixin xxs() {
   //****note xxs uses MAX-width****//
   @media (max-width: $breakpoint-xxs) {
