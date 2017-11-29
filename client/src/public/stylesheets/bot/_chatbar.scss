@@ -20,27 +20,21 @@
   align-items: center;
   position: fixed;
   bottom: 0px;
-  // right: 100px;
-  // border-left: 1px solid $not-black;
-  @include xxs {
-    width: 22em;
-  }
 }
 
 .chatbar input[type=text] {
   height: 2.5em;
-  width: 17em;
+  width: 17.5em;
   font-size: 1em;
   margin: 0px;
+  position: relative;
+  right: .4em;
   background: #ffffff;
   border: none;
   font-family: $bot-font;
   -webkit-font-smoothing: antialiased;
   font-weight: lighter;
   padding: 10px;
-  @include xxs {
-    width: 14em;
-  }
 }
 
 button.circle-x {
@@ -49,7 +43,6 @@ button.circle-x {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin-right: 5px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -63,13 +56,6 @@ button.circle-x {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 0px;
-  @include xxs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-  }
 }
 
 button.circle-x:hover {
@@ -88,7 +74,9 @@ button.mic {
   color: $icon-grey;
   outline: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: .8em;
+  position: relative;
+  right: .3em;
   cursor: pointer;
   -webkit-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;

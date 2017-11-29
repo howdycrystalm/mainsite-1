@@ -6,7 +6,7 @@
   padding: 16px;
   padding-left: 8px;
   padding-right: 10px;
-  border-top: 1px solid #939393;
+  border-top: 1px solid #6b6b6b;
   background-color: #ffc107;
   color: $not-black;
   display: -webkit-box;
@@ -20,19 +20,16 @@
   align-items: center;
   position: fixed;
   bottom: 0px;
-  // right: 100px;
-  // border-left: 1px solid $not-black;
-  @include xxs {
-    width: 22em;
-  }
 }
 
-button.circle-x {
+button.circle-m {
   background-color: #115077;
   color: #ffffff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  position: relative;
+  left: 0.2em;
   margin-right: 5px;
   border: none;
   cursor: pointer;
@@ -67,20 +64,23 @@ button.circle-x:hover {
   padding: 0px;
 }
 
-button.mic {
+button.mic-m {
   background-color: transparent;
   color: $icon-grey;
   outline: 0;
   padding: 0;
   padding-top: 10px;
+  position: relative;
+  right: .2em;
   cursor: pointer;
   -webkit-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
   transition: 0.1s;
   @include xxs {
-    padding-top: 6px;
+    position: relative;
     font-size: 29px;
+    top: .1em;
   }
 }
 
@@ -110,9 +110,11 @@ button.mic:active {
 
 .chatbar-m input[type=text] {
   height: 2.5em;
-  width: 17em;
+  width: 17.5em;
   font-size: 1em;
   margin: 0px;
+  position: relative;
+  right: 0.3em;
   background: #ffffff;
   border: none;
   font-family: $bot-font;
@@ -120,6 +122,6 @@ button.mic:active {
   font-weight: lighter;
   padding: 10px;
   @include xxs {
-    width: 14em;
+    width: 15em;
   }
 }
