@@ -7,7 +7,7 @@
   padding-left: 8px;
   padding-right: 10px;
   border-top: 1px solid #939393;
-  background-color: red;
+  background-color: #ffc107;
   color: $not-black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,22 +24,6 @@
   // border-left: 1px solid $not-black;
   @include xxs {
     width: 22em;
-  }
-}
-
-.chatbar input[type=text] {
-  height: auto;
-  width: 17em;
-  font-size: 1em;
-  margin: 0px;
-  background: transparent;
-  border: none;
-  font-family: $bot-font;
-  -webkit-font-smoothing: antialiased;
-  font-weight: lighter;
-  margin-left: 15px;
-  @include xxs {
-    width: 14em;
   }
 }
 
@@ -85,7 +69,7 @@ button.circle-x:hover {
 
 button.mic {
   background-color: transparent;
-  color: $warm-grey;
+  color: $icon-grey;
   outline: 0;
   padding: 0;
   padding-top: 10px;
@@ -101,7 +85,7 @@ button.mic {
 }
 
 button.mic:hover {
-  color: #5392be;
+  color: $light-grey;
   outline: 0;
   padding: 0;
   -webkit-transition-duration: 0.2s;
@@ -120,6 +104,22 @@ button.mic:active {
   transition: 0s;
 }
 
-.chat-input {
+.chat-input-m {
   outline: none !important;
+}
+
+.chatbar-m input[type=text] {
+  height: 2.5em;
+  width: 17em;
+  font-size: 1em;
+  margin: 0px;
+  background: #ffffff;
+  border: none;
+  font-family: $bot-font;
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+  padding: 10px;
+  @include xxs {
+    width: 14em;
+  }
 }
