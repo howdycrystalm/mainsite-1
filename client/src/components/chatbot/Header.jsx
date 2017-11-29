@@ -12,7 +12,7 @@ class Header extends React.Component {
     return (
       // this empty div wraps everything, and lets header view correctly in safari*/}
       <div>
-        <div className="header-m">
+        <div className="header-x">
           <div className="icon-container">
             <button
               type="button"
@@ -20,7 +20,7 @@ class Header extends React.Component {
               className="close-bot"
               onClick={this.props.onClick.bind(this)}
             >
-              <i className="material-icons" style={{ fontSize: '1.2em' }}>
+              <i className="material-icons" style={{ fontSize: '1.5em' }}>
                 close
               </i>
             </button>
