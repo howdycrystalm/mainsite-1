@@ -19,7 +19,7 @@ class ChatBubble extends React.Component {
   }
 
   render() {
-    let className = ' bot-bubble';
+    let className = ' bot-bubble-m';
     if (this.props.theme === 'dark') {
       className += ' dark-bot-bubble';
     }
@@ -29,7 +29,7 @@ class ChatBubble extends React.Component {
       botButtons += ' botButtons';
     }
 
-    let userBubble = 'user-bubble user-bubble-alignment';
+    let userBubble = 'user-bubble user-bubble-alignment-m';
     if (this.props.theme === 'dark') {
       userBubble += ' dark-user-bubble';
     }
@@ -88,7 +88,7 @@ class ChatBubble extends React.Component {
         </div>
       );
     } else if (this.props.isBot === false) {
-      className = ' user-bubble user-bubble-alignment'; // using '=' instead of '+=' seperates blue chat-bubble from orange user-bubble-alignment
+      className = ' user-bubble user-bubble-alignment-m'; // using '=' instead of '+=' seperates blue chat-bubble from orange user-bubble-alignment
       return (
         // allows user bubble and bot bubble to be on two different lines because we're wrapping in div className=bubble-breaker
         <div className="bubble-breaker-m">
