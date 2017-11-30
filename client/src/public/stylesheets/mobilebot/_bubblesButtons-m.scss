@@ -68,11 +68,22 @@
   margin-right: 0px;
 }
 
+// .bubble-breaker-m {
+//   /*div wraps user bubble forcing next bubble onto next line*/
+//   background-color: transparent;
+//   width: 100vw;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+// }
 .bubble-breaker-m {
-  /*div wraps user bubble forcing next bubble onto next line*/
-  background-color: transparent;
+  background-color: #9c27b0;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  padding: 10px 18px 10px 10px;
+  /* padding-right: 18px; */
 }
